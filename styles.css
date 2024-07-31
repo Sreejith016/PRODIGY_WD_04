@@ -1,0 +1,88 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('weatherScene.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    color: #333;
+}
+
+.weather-app {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.weather-app:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 1em;
+}
+
+input[type="text"]:focus {
+    border-color: #74ebd5;
+    box-shadow: 0 0 10px rgba(116, 235, 213, 0.5);
+}
+
+button {
+    margin-top: 20px; /* Adjust this value to move the button further down */
+    padding: 12px 24px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #357ab8;
+    transform: scale(1.05);
+}
+
+#weather-info {
+    display: none;
+    margin-top: 20px;
+}
+
+#weather-info div {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #555;
+}
+
+#icon img {
+    width: 100px;
+    transition: transform 0.3s;
+}
+
+#icon img:hover {
+    transform: scale(1.1);
+}
