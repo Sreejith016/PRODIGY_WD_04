@@ -1,6 +1,4 @@
 # PRODIGY_WD_04
-Here’s a detailed README file for your Weather App project:
-
 
 
 # Weather App
